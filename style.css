@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background: hsl(225, 100%, 98%); */
+  background: url('./images/pattern-background-mobile.svg') no-repeat;
+  background-size: cover;
+}
+@media (min-width: 900px) {
+  body {
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+    background-size: contain;
+  }
+}
+main {
+  max-width: 35rem;
+  width: 100%;
+  height: 65rem;
+
+  border-radius: 2rem;
+  background: white;
+  box-shadow: 0px 15px 45px hsl(224, 23%, 55%);
+}
+@media (min-width: 900px) {
+  main {
+    max-width: 40rem;
+  }
+}
+.img_wrapper {
+  max-width: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  .img_wrapper {
+    max-width: 40rem;
+  }
+}
+svg {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+@media (min-width: 900px) {
+  svg {
+    width: 40rem;
+  }
+}
+.content_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+.content {
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 26.5rem;
+  margin-bottom: 3rem;
+  color: hsl(180, 4%, 50%);
+  font-weight: 500;
+}
+@media (min-width: 900px) {
+  .content {
+    max-width: 30.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.price_plan_wapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 28rem;
+  width: 100%;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  margin-right: 2.5rem;
+}
+@media (min-width: 900px) {
+  .price_plan_wapper {
+    max-width: 33rem;
+    margin-right: 0;
+    padding: 2rem 2rem;
+    justify-content: center;
+  }
+}
+.title_name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.price {
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  color: hsl(180, 4%, 50%);
+  font-weight: 500;
+}
+@media (min-width: 900px) {
+  .price {
+    margin-right: 9.5rem;
+    margin-top: 0.5rem;
+  }
+}
+a {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(118, 108, 241);
+  cursor: pointer;
+}
+.proceed_btn {
+  margin-bottom: 3rem;
+  max-width: 26.5rem;
+  width: 100%;
+  background: rgb(56, 42, 225);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0px 15px 25px hsl(224, 40%, 68%);
+}
+@media (min-width: 900px) {
+  .proceed_btn {
+    max-width: 33rem;
+  }
+}
+.proceed_btn:hover {
+  background: rgb(118, 108, 241);
+  cursor: pointer;
+}
+.cancel_order {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(180, 4%, 50%);
+}
+.cancel_order:hover {
+  cursor: pointer;
+  color: black;
+}
